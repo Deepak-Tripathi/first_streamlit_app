@@ -32,4 +32,4 @@ streamlit.text(fruityvice_response.json()) # Just write data to the screen
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
 # Output it on screen as table
-pandas.dataframe(fruityvice_normalized)
+streamlit.dataframe(fruityvice_normalized)
