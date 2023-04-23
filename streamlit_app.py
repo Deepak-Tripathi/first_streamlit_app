@@ -45,7 +45,7 @@ try:
   else:
     # Output it on screen as table
     back_from_fn = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(fruityvice_normalized)
+    streamlit.dataframe(back_from_fn)
 
 except URLError as e:
   streamlit.error()
